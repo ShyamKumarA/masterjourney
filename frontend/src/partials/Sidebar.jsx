@@ -279,12 +279,12 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 }}
               </SidebarLinkGroup>
 
-              {/* <li
+              <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
                   pathname.includes("userpin") && "bg-slate-900"
                 }`}
               >
-                <NavLink
+                {/* <NavLink
                   end
                   to="/userpins"
                   className={`block text-slate-200 truncate transition duration-150 ${
@@ -292,7 +292,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       ? "hover:text-slate-200"
                       : "hover:text-white"
                   }`}
-                >
+                > */}
                   <div className="flex items-center">
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <circle
@@ -340,8 +340,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       User Pins
                     </span>
                   </div>
-                </NavLink>
-              </li> */}
+                {/* </NavLink> */}
+              </li>
 
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
@@ -396,7 +396,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   pathname.includes("withdrawal") && "bg-slate-900"
                 }`}
               >
-                <NavLink
+                {/* <NavLink
                   end
                   to="/withdrawal"
                   className={`block text-slate-200 truncate transition duration-150 ${
@@ -404,7 +404,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       ? "hover:text-slate-200"
                       : "hover:text-white"
                   }`}
-                >
+                > */}
                   <div className="flex items-center">
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
@@ -433,10 +433,10 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      With
+                      Withdraw
                     </span>
                   </div>
-                </NavLink>
+                {/* </NavLink> */}
               </li>
 
               <li
@@ -444,7 +444,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                   pathname.includes("salary") && "bg-slate-900"
                 }`}
               >
-                <NavLink
+                {/* <NavLink
                   end
                   to="/salary"
                   className={`block text-slate-200 truncate transition duration-150 ${
@@ -452,7 +452,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       ? "hover:text-slate-200"
                       : "hover:text-white"
                   }`}
-                >
+                > */}
                   <div className="flex items-center">
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
@@ -484,7 +484,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       Salary
                     </span>
                   </div>
-                </NavLink>
+                {/* </NavLink> */}
               </li>
             </ul>
           </div>
