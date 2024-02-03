@@ -13,7 +13,7 @@ import {
 import multer from "multer";
 import Package from "../models/packageModel.js";
 import path from "path";
-import sendMail from "../config/mailer.js";
+// import sendMail from "../config/mailer.js";
 // import upload from "../middleware/fileUploadMiddleware.js";
 
 // Register new user
@@ -115,9 +115,9 @@ router.post(
 
         const updatedUser = await sponserUser.save();
 
-        if (updatedUser) {
-          await sendMail(user.email, user.name, user.ownSponserId, password);
-        }
+        // if (updatedUser) {
+        //   await sendMail(user.email, user.name, user.ownSponserId, password);
+        // }
 
         res.json({
           _id: user._id,
@@ -308,7 +308,7 @@ router.post(
 );
 
 const storage = multer.diskStorage({
-  destination: "/masterjourney",
+  destination: "/",
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e6);
     const fileExtension = path.extname(file.originalname);
